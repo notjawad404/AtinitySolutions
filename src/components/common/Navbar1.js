@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../home/master.css'
 import './Navbar1.css'
 import {Link} from 'react-router-dom';
-import logo1 from '../images/logo.jpg';
+import logo1 from '../images/common/atinity.png';
 
     function Navbar1() {
       const [isFixed, setIsFixed] = useState(false);

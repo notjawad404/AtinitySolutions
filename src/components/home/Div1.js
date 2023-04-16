@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import './master.css'
-import homepic1 from '../images/homeimg1.jpg'
-import homepic2 from '../images/homeimg2.jpg'
-import homepic3 from '../images/homeimg3.jpg'
+import homepic1 from '../images/home/homeimg1.jpg'
+import homepic2 from '../images/home/homeimg2.jpg'
+import homepic3 from '../images/home/homeimg3.jpg'
 
 export default class Div1 extends Component {
     render() {

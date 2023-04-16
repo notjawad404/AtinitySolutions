@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import './master.css'
 
-import android from '../images/android.jpg'
-import web from '../images/web.jpg'
-import uiux from '../images/uiux.jpg'
-import solution from '../images/solution.jpg'
-import crossplatform from '../images/crossplatform.jpg'
-import cloud from '../images/cloud.jpg'
+import android from '../images/home/android.jpg'
+import web from '../images/home/web.jpg'
+import uiux from '../images/home/uiux.jpg'
+import solution from '../images/home/solution.jpg'
+import crossplatform from '../images/home/crossplatform.jpg'
+import cloud from '../images/home/cloud.jpg'
 
 export default class Div2 extends Component {
   render() {
@@ -18,9 +18,9 @@ export default class Div2 extends Component {
             <Col sm={8} lg={3} className='mx-2' width="400px" height="400px">
               <div className='box'>
                 <img src={android} alt="android" />
-                <h3>Android Development</h3>
+                <h3>App Development</h3>
                 <p>Comprehensive app development services to streamline information access and improve productivity through innovative and synchronized solutions</p>
-              </div>
+                </div>
             </Col>
             <Col sm={8} lg={3} className='mx-2' width="400px" height="400px">
             <div className='box'>
