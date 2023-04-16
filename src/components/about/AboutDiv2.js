@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import './about.css'
+import divpic2 from '../images/about/div2pic2.jpg'
+
 
 export default class AboutDiv2 extends Component {
     render() {
         return (
             <div className='text-center align-content-center justify-content-center'>
-                <div>
+                <div className='div2'>
                     <h1>Our Values</h1>
                     <p>
                         <span>
@@ -59,7 +61,7 @@ export default class AboutDiv2 extends Component {
                         We empower our employees to take ownership of their work, fostering a culture of creativity, learning and growth.
 
                     </p>
-
+                    <img src={divpic2} alt='Our-Values' className='aboutpics'></img>
                 </div>
             </div>
         )

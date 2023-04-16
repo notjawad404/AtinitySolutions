@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
+import './about.css'
+import divpic1 from '../images/about/div2pic1.jpg'
+
 
 export default class AboutDiv1 extends Component {
   render() {
     return (
       <div className='justify-content-center text-center'>
         <div className='mt-5'>.</div>
-        <div className='mt-5 w-75 m-auto'>
+        <div className='mt-5 div2'>
           <h2 className='pb-5'>Our Mission</h2>
           <div>
             <h3>To Revolutionize the Technology Landscape</h3>
@@ -20,6 +23,7 @@ export default class AboutDiv1 extends Component {
             </p>
           </div>
         </div>
+        <img src={divpic1} alt="Our-Mission" width='535px' height='375px' />
       </div>
     )
   }
