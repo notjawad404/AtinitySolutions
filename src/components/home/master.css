@@ -48,4 +48,10 @@
     height: 100%;
   }
 
+/* Image Positioning */
+
+.float-left{
+float: left;
+margin-right: 20px;
+}
 

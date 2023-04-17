@@ -10,12 +10,9 @@ export default class Div1 extends Component {
         return (
             <div>
                 <Container>
-                <Row className='m-3'>
-                        <Col sm={2} md={2}>
-
-                        </Col>
-                        <Col sm={7} md={4}>
-                            <div className='text-center my-3 mx-auto'>
+                    <Row className='m-3'>
+                        <Col sm={8} lg={6}>
+                            <div className='text-center w-75 my-3 ml-5'>
                                 <h3 className='mb-3'>Scalable, Secure, and Reliable Software Solutions</h3>
                                 <p className='mb-3'>We believe in proiding soutions that grow with your business. Our software is design to be scalable, secure, and reliable ensuring that you can meet the changing demands of your business with ease
                                 </p>
@@ -23,18 +20,11 @@ export default class Div1 extends Component {
                             </div>
 
                         </Col>
-                        <Col sm={2} md={1}>
-
-                        </Col>
-                        <Col sm={3} md={4}>
-                            <div className='text-center my-3 mx-auto'>
-                                <img src={homepic1} width="100%" alt="Pic1"></img>
+                        <Col sm={4} lg={6}>
+                            <div className="d-flex">
+                                <img src={homepic1} width="100%" alt="Pic1" className="float-left"></img>
 
                             </div>
-                        </Col>
-
-                        <Col sm={2} md={1}>
-
                         </Col>
                     </Row>
                     <Row className='m-3'>
@@ -50,7 +40,7 @@ export default class Div1 extends Component {
                         </Col>
                         <Col sm={2} md={1}>
 
-</Col>
+                        </Col>
                         <Col sm={7} md={4}>
                             <div className='text-center my-3 mx-auto'>
                                 <h3 className='mb-3'>Transform Your Business with Atinity's Expertise</h3>
