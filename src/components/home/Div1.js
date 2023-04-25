@@ -11,6 +11,9 @@ export default class Div1 extends Component {
             <div>
                 <Container>
                     <Row className='m-3'>
+                    <Col sm={2} md={2}>
+
+</Col>
                         <Col sm={8} lg={6}>
                             <div className='text-center w-75 my-3 ml-5'>
                                 <h3 className='mb-3'>Scalable, Secure, and Reliable Software Solutions</h3>
@@ -20,7 +23,7 @@ export default class Div1 extends Component {
                             </div>
 
                         </Col>
-                        <Col sm={4} lg={6}>
+                        <Col sm={4} lg={4}>
                             <div className="d-flex">
                                 <img src={homepic1} width="100%" alt="Pic1" className="float-left"></img>
 
