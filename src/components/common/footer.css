@@ -5,3 +5,8 @@
 .img1{
     width: 40px;
 }
+
+.link1{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+  }

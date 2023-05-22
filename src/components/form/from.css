@@ -1,3 +1,43 @@
-body{
-    background-color: rgb(252, 252, 252);
-}
+.contact-form {
+    background-color: rgba(146, 75, 143, 0.39);
+    padding: 20px;
+    color: white;
+  }
+
+  .width1{
+    width: 75%;
+    height: auto;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .msg-height{
+    height: 200px;
+  }
+  
+  label {
+    display: block;
+  }
+  
+  input[type="text"],
+  input[type="email"]{
+    width:75%;
+    padding: 10px;
+  }
+
+  textarea{
+    width:75%;
+    padding: 10px;
+    height: auto;
+  }
+  
+  .btn-primary {
+    background-color: rgb(180, 9, 180);
+    color: white;
+  }
+  

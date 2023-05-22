@@ -1,89 +1,62 @@
-import React, { Component } from 'react';
+import React, { useRef, useState } from 'react';
+import emailjs from 'emailjs-com';
+import './from.css'
 
-class Forms extends Component {
-  constructor(props) {
-    super(props);
+export const ContactUs = () => {
+  const form = useRef();
+  const [showModal, setShowModal] = useState(false);
 
-    this.state = {
-      firstName: '',
-      lastName: '',
-      email: '',
-      message: '',
-    };
+  const sendEmail = (e) => {
+    e.preventDefault();
 
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleFirstNameChange = this.handleFirstNameChange.bind(this);
-    this.handleLastNameChange = this.handleLastNameChange.bind(this);
-    this.handleEmailChange = this.handleEmailChange.bind(this);
-    this.handleMessageChange = this.handleMessageChange.bind(this);
-  }
+    emailjs.sendForm('service_f2uu41v', 'template_xqev47j', form.current, 'GLvCK2MkX1UMTmC7K')
+      .then((result) => {
+        console.log(result.text);
+        setShowModal(true);
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
 
-  handleSubmit(event) {
-    event.preventDefault();
-    console.log(this.state);
-  }
+  const closeModal = () => {
+    setShowModal(false);
+  };
 
-  handleFirstNameChange(event) {
-    this.setState({ firstName: event.target.value });
-  }
+  return (
+    <div className='width1'>
+      <form ref={form} onSubmit={sendEmail} className="contact-form">
+        <div className="form-group">
+          <input type="text" name="formsubject" className="form-control" placeholder='Subject' />
+        </div>
+        <div className="form-group">
+          <input type="email" name="useremail" className="form-control" placeholder='Email'/>
+        </div>
+        <div className="form-group">
+          <textarea name="message" className="form-control msg-height" placeholder='Message'/>
+        </div>
+        <input type="submit" value="Send" className="btn btn-primary" />
+      </form>
 
-  handleLastNameChange(event) {
-    this.setState({ lastName: event.target.value });
-  }
 
-  handleEmailChange(event) {
-    this.setState({ email: event.target.value });
-  }
-
-  handleMessageChange(event) {
-    this.setState({ message: event.target.value });
-  }
-
-  render() {
-    return (
-      <div style={{ backgroundColor: 'WHITE' }}>
-        <form onSubmit={this.handleSubmit}>
-          <div style={{ marginBottom: '10px' }}>
-            <label htmlFor="firstName" style={{ marginRight: '10px' }}>First Name:</label>
-            <input
-              type="text"
-              id="firstName"
-              value={this.state.firstName}
-              onChange={this.handleFirstNameChange}
-            />
+      <div className={`modal ${showModal ? 'show' : ''}`} style={{ display: showModal ? 'block' : 'none' }}>
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title">Success!</h5>
+              <button type="button" className="close" onClick={closeModal}>
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div className="modal-body">
+              <p>Your message has been sent successfully.</p>
+              <p>You will receive confirmational email shortly</p>
+            </div>
+            <div className="modal-footer">
+              <button type="button" className="btn btn-secondary" onClick={closeModal}>Close</button>
+            </div>
           </div>
-          <div style={{ marginBottom: '10px' }}>
-            <label htmlFor="lastName" style={{ marginRight: '10px' }}>Last Name:</label>
-            <input
-              type="text"
-              id="lastName"
-              value={this.state.lastName}
-              onChange={this.handleLastNameChange}
-            />
-          </div>
-          <div style={{ marginBottom: '10px' }}>
-            <label htmlFor="email" style={{ marginRight: '40px' }}>Email:</label>
-            <input
-              type="email"
-              id="email"
-              value={this.state.email}
-              onChange={this.handleEmailChange}
-            />
-          </div>
-          <div style={{ marginBottom: '10px' }}>
-            <label htmlFor="message" style={{}}>Message:</label>
-            <br></br>
-            <textarea style={{ width: '100%', height: '100px' }}
-              id="message"
-              value={this.state.message}
-              onChange={this.handleMessageChange}
-            />
-          </div>
-          <button type="submit">Submit</button>
-        </form>
+        </div>
       </div>
-    );
-  }
-}
-
-export default Forms;
+    </div>
+  );
+};
