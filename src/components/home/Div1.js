@@ -23,7 +23,7 @@ export default class Div1 extends Component {
                             </div>
 
                         </Col>
-                        <Col sm={4} lg={4}>
+                        <Col sm={6} md={6} lg={4}>
                             <div className="d-flex">
                                 <img src={homepic1} width="100%" alt="Pic1" className="float-left"></img>
 
@@ -34,8 +34,7 @@ export default class Div1 extends Component {
                         <Col sm={2} md={2}>
 
                         </Col>
-
-                        <Col sm={3} md={4}>
+                        <Col sm={6} md={6} lg={4}>
                             <div className='text-center my-3 mx-auto'>
                                 <img src={homepic2} width="100%" alt="Pic1"></img>
 
@@ -75,7 +74,7 @@ export default class Div1 extends Component {
                         <Col sm={2} md={1}>
 
                         </Col>
-                        <Col sm={3} md={4}>
+                        <Col sm={6} md={6} lg={4}>
                             <div className='text-center my-3 mx-auto'>
                                 <img src={homepic3} width="100%" alt="Pic1"></img>
 

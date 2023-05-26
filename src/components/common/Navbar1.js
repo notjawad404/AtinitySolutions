@@ -6,13 +6,6 @@ import './Navbar1.css'
 import logo1 from '../images/common/atinity.png';
 
 import { Link  } from 'react-router-dom';
-// import { useHistory } from 'react-router-dom';
-
-
-// import Home from  '../main/Home';
-// import About from '../main/About'
-// import Contact from '../main/Contact';
-// import Services from '../main/Services';
 
 
     function Navbar1() {
@@ -54,7 +47,6 @@ import { Link  } from 'react-router-dom';
             </Navbar.Collapse>
           </Container>
         </Navbar>
-        
       </div>
     )
   }
