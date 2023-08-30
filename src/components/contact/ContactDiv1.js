@@ -12,7 +12,7 @@ export default class ContactDiv1 extends Component {
     return (
       <div className='justify-content-center text-center pt-5'>
       
-      <img src={contact} alt='Contact' className='pic1'/>
+      <img className="img-fluid pic1" src={contact} alt='Contact'/>
       <p className='mb-5 w-50 m-auto'>At ATINITY, we value your feedback and are always here to help with any questions or concerns. Please reach out to us.</p>
       <Container >
         <Row>

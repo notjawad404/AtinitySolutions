@@ -23,7 +23,7 @@ export default class AboutDiv1 extends Component {
             </p>
           </div>
         </div>
-        <img src={divpic1} alt="Our-Mission" width='535px' height='375px' />
+        <img src={divpic1} alt="Our-Mission" className='img-fluid aboutpics' />
       </div>
     )
   }

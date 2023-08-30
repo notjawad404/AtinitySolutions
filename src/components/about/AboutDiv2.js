@@ -61,7 +61,7 @@ export default class AboutDiv2 extends Component {
                         We empower our employees to take ownership of their work, fostering a culture of creativity, learning and growth.
 
                     </p>
-                    <img src={divpic2} alt='Our-Values' className='aboutpics'></img>
+                    <img src={divpic2} alt='Our-Values' className='aboutpics img-fluid'></img>
                 </div>
             </div>
         )
