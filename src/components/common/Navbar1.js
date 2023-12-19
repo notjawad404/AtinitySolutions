@@ -35,7 +35,7 @@ import { Link  } from 'react-router-dom';
               <Container className=" d-flex justify-content-end">
                 <Nav>
                   <Link className='link1 mx-2' to="/" >Home</Link>
-                  <Link className='link1 mx-2' to="/About">About Us</Link>
+                  <Link className='link1 mx-2' to="/About">About</Link>
                   <Link className='link1 mx-2' to="/Services">Services</Link>
 
                 </Nav>
